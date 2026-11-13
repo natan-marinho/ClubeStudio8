@@ -59,3 +59,7 @@ Alternativa na nuvem: `npx eas-cli@latest build -p android --profile preview`.
 
 Na primeira vez que um alarme é ativado, o app pede permissão de notificação e abre a tela
 "Alarmes e lembretes" do Android (alarme exato). Sem ela o alarme ainda toca, mas pode atrasar.
+
+## Licença
+
+[MIT](LICENSE). Código aberto: pode usar, estudar, modificar e distribuir.
