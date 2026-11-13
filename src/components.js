@@ -89,7 +89,7 @@ export function SectionTitle({ children, right, icon }) {
   );
 }
 
-export function CheckRow({ checked, label, sub, onPress, onLongPress, right }) {
+export function CheckRow({ checked, label, sub, onPress, onLongPress, right, riscar = true }) {
   return (
     <Pressable
       onPress={onPress}
@@ -99,7 +99,7 @@ export function CheckRow({ checked, label, sub, onPress, onLongPress, right }) {
     >
       <View style={[st.box, checked && st.boxOn]}>{checked && <Icon name="check-bold" size={16} color={C.onLime} />}</View>
       <View style={{ flex: 1 }}>
-        <Text style={[st.rowText, checked && st.rowTextDone]}>{label}</Text>
+        <Text style={[st.rowText, checked && riscar && st.rowTextDone]}>{label}</Text>
         {!!sub && <Text style={st.rowSub}>{sub}</Text>}
       </View>
       {right}

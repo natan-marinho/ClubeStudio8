@@ -25,7 +25,7 @@ export function ClienteForm({ form, setForm }) {
     <>
       <Field label="Nome" icon="account-outline" value={form.nome} onChangeText={(nome) => setForm({ ...form, nome })} placeholder="Ex.: João Silva" autoCapitalize="words" />
       <Field label="Telefone / WhatsApp com DDD" icon="phone-outline" value={form.telefone} onChangeText={(telefone) => setForm({ ...form, telefone })} placeholder="Ex.: 11 91234-5678" keyboardType="phone-pad" />
-      <CheckRow checked={form.autorizou} onPress={() => setForm({ ...form, autorizou: !form.autorizou })} label="Autorizou receber lembretes pelo WhatsApp" sub="LGPD – só envie lembretes se ele autorizou" />
+      <CheckRow checked={form.autorizou} onPress={() => setForm({ ...form, autorizou: !form.autorizou })} riscar={false} label="Autorizou receber lembretes pelo WhatsApp" sub="LGPD – só envie lembretes se ele autorizou" />
     </>
   );
 }
